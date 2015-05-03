@@ -1,0 +1,55 @@
+<div class="bs-example">
+    <h4>Run Query </h4>
+    <form class="form-horizontal">
+    
+    <div class="form-group">
+            <label class="control-label col-xs-1" for="inputName">Name:</label>
+            <div class="col-xs-3">
+                <input type="text" class="form-control" id="inputName" ng-model="user.name">
+            </div>
+        </div>
+                
+        <div class="form-group">
+            <label class="control-label col-xs-1" for="inputEmail">Description:</label>
+            <div class="col-xs-3">
+                <input type="text" class="form-control" id="inputDescription" ng-model="user.description">
+            </div>
+        </div>
+        
+         <div class="form-group">
+            <label class="control-label col-xs-1" for="postalAddress">Query:</label>
+            <div class="col-xs-9">
+                <textarea rows="3" class="form-control" id="inputDefinition" ng-model="user.definition"></textarea>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label class="control-label col-xs-1">Env:</label>
+            <div class="col-xs-1">
+                <label class="radio-inline">
+                    <input type="radio" name="env" checked value="test-env-1"> Test-env1
+                </label>
+            </div>
+            <div class="col-xs-1">
+                <label class="radio-inline">
+                    <input type="radio" name="env" value="test-env2">Test-env2
+                </label>
+            </div>
+            <div class="col-xs-1">
+                <label class="radio-inline">
+                    <input type="radio" name="env" value="prod">Prod
+                </label>
+            </div>
+        </div>
+      
+        <br>
+        <div class="form-group">
+            <div class="col-xs-offset-2 col-xs-9">
+                <input ng-click="getExcelData2()" type="submit" class="btn btn-primary" value="Download">
+                <input ng-click="getExcelData3()" type="submit" class="btn btn-default" value="Email">
+                <input ng-click="cancel()" type="submit" class="btn btn-default" value="Back">
+            </div>
+        </div>
+    </form>
+</div>
+                              		

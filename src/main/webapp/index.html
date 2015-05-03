@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en" ng-app="ngdemo">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Webapp</title>
+    <link rel="stylesheet" href="css/app.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
+    
+</head>
+<body>
+	<div class="navbar navbar-default">
+	
+		<nav>
+			<ul class="nav nav-pills pull-right">
+				<li role="presentation" class="active"><a href="#">Home</a></li>
+				<li role="presentation"><a href="#">About</a></li>
+				<li role="presentation"><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+		<h3 class="text-muted">Query online</h3>
+	</div>
+ <ul class="nav nav-pills">
+  <li role="presentation" ><a href="#/query-list">Query List</a></li>
+    <li role="presentation" ><a  href="#/query-creation">create new query</a></li>
+ 
+ </ul>
+ 
+
+<div ng-view></div>
+
+<!-- JQuery ================================================================ -->
+<script src="/js/jquery/jquery-2.0.3.js"></script>
+
+<!-- Bootstrap ============================================================= -->
+<script src="/js/bootstrap/bootstrap.js"></script>
+
+<!-- AngularJS ============================================================= -->
+<!-- In production use:
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+-->
+<script src="/js/angular.js"></script>
+<script src="/js/angular-resource.js"></script>
+
+<script src="https://rawgit.com/eligrey/FileSaver.js/master/FileSaver.js"></script>
+
+<!-- AngularJS App Code ==================================================== -->
+<script src="/js/app.js"></script>
+<script src="/js/services.js"></script>
+<script src="/js/controllers.js"></script>
+<script src="/js/filters.js"></script>
+<script src="/js/directives.js"></script>
+
+
+</body>
+</html>
